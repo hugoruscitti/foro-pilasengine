@@ -226,9 +226,7 @@ acceptable_attributes = ['abbr', 'accept', 'accept-charset', 'accesskey',
   'usemap', 'valign', 'value', 'vspace', 'width', 'style']
 """
 
-#TODO add a config model
 try:
     from local_settings import *
-    CTX_CONFIG.update(CTX_CONFIG_)
 except ImportError, e:
     pass

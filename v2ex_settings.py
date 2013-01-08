@@ -17,7 +17,6 @@ TEMPLATE_DIRS = (
 
 try:
     from local_settings import *
-    CTX_CONFIG.update(CTX_CONFIG_)
 except ImportError, e:
     pass
 try:
