@@ -117,13 +117,12 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 
 ROOT_URLCONF = 'urls'
+V2EX_TEMPLATE_DIR = os.path.join(lbforum.__path__[0], 'templates_v2ex')
 
 TEMPLATE_DIRS = (
         os.path.join(HERE, 'templates_plus'),
         os.path.join(HERE, 'templates'),
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+        V2EX_TEMPLATE_DIR,
 )
 
 FIXTURE_DIRS = (
