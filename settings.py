@@ -117,6 +117,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 
 ROOT_URLCONF = 'urls'
+import lbforum
 V2EX_TEMPLATE_DIR = os.path.join(lbforum.__path__[0], 'templates_v2ex')
 
 TEMPLATE_DIRS = (
