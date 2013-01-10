@@ -11,6 +11,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		{% include 'lbforum/inc_styles.html' %}
 		{% block extra_header %}{% endblock %}
+        <script type="text/javascript" src="/static/lbforum/scripts/jquery.min.js" ></script>
             <script language="javascript">
                 function alertSize() {
                   var myHeight = 0;
@@ -31,6 +32,7 @@
 
                 function AssignFrameHeight() {
                   var theFrame = $("#ifrm", parent.document.body);
+                  alert(theFrame);
                   var frameHeight1 = getIframeHeight('ifrm');
                   var frameHeight2 = $(document.body).height();
                   if ($(document.body)[0]) {
@@ -69,6 +71,7 @@
                 }
 
                 $(document).ready(function() { // jQuery
+                        alert('hola');
                       AssignFrameHeight();
                 });
         </script>
