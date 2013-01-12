@@ -20,7 +20,7 @@
         */
         respondToSizingMessage = function(e) {
             if(e.data == 'sizing?') {
-                e.source.postMessage('sizing:'+document.body.scrollHeight+','+document.body.scrollWidth+":"+document.location.origin, e.origin);
+                e.source.postMessage('sizing:'+document.body.scrollHeight+','+document.body.scrollWidth+":"+document.location.href, e.origin);
             }
         }
 
