@@ -4,7 +4,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
-SETTINGS = 'v2ex_settings'
+#SETTINGS = 'v2ex_settings'
 
 ADMINS = (
     # ('Your Name', 'your_email@domain.com'),
@@ -115,6 +115,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
         "djangohelper.context_processors.ctx_config",
 )
 
+LBF_STICKY_TOPIC_POST = True
+LBF_LAST_TOPIC_NO_INDEX = True
 
 ROOT_URLCONF = 'urls'
 import lbforum
@@ -123,7 +125,8 @@ V2EX_TEMPLATE_DIR = os.path.join(lbforum.__path__[0], 'templates_v2ex')
 TEMPLATE_DIRS = (
         #os.path.join(HERE, 'templates_plus'),
         #os.path.join(HERE, 'templates'),
-        V2EX_TEMPLATE_DIR,
+        #V2EX_TEMPLATE_DIR,
+        os.path.join(HERE, 'templates_v2ex'),
 )
 
 FIXTURE_DIRS = (
