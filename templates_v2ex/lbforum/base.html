@@ -25,6 +25,10 @@
         }
 
         window.addEventListener('message', respondToSizingMessage, false);
+        window.onload = function() {
+            alert("generando evento.");
+            window.postMessage('sizing?', 'http://foro-pilasengine.com.ar');
+        }
         </script>
 
 
