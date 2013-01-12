@@ -185,8 +185,8 @@ REGISTER_URL = '%saccounts/register/' % ROOT_URL#registration_register
 CHANGE_PSWD_URL = '%saccounts/password/change/' % ROOT_URL#registration_register
 
 CTX_CONFIG = {
-        'LBFORUM_TITLE': 'LBForum',
-        'LBFORUM_SUB_TITLE': 'A forum engine written in Python using Django',
+        'LBFORUM_TITLE': 'Comunidad pilas-engine',
+        'LBFORUM_SUB_TITLE': 'Foro de programadores que usan pilas-engine',
         'FORUM_PAGE_SIZE': 50,
         'TOPIC_PAGE_SIZE': 20,
 
