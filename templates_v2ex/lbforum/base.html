@@ -11,6 +11,23 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		{% include 'lbforum/inc_styles.html' %}
 		{% block extra_header %}{% endblock %}
+
+        <script>
+        /*
+          Gracias Tony Pitale !!
+          
+              http://viget.com/extend/using-javascript-postmessage-to-talk-to-iframes
+        */
+        respondToSizingMessage = function(e) {
+            if(e.data == 'sizing?') {
+                e.source.postMessage('sizing:'+document.body.scrollHeight+','+document.body.scrollWidth, e.origin);
+            }
+        }
+
+        window.addEventListener('message', respondToSizingMessage, false);
+        </script>
+
+
 	</head>
 
 	<body>
