@@ -220,6 +220,10 @@ a.dark:hover {
 
 	background-color: #fff;
 	border: 2px solid #fff;
+    
+    -webkit-box-shadow: 0.1em 0.1em 0.6em rgba(0, 0, 0, 0.2);
+    box-shadow: 0.1em 0.1em 0.6em rgba(0, 0, 0, 0.2);
+    border: 1px solid #CCC;
 }
 
 .glass {
